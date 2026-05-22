@@ -1,0 +1,33 @@
+# Android / Gradle
+.gradle/
+build/
+*.iml
+.idea/
+local.properties
+.cxx/
+*.apk
+
+# Node / React Native
+node_modules/
+.expo/
+dist/
+npm-debug.log*
+
+# Flutter
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+
+# Kotlin Multiplatform (KMM)
+.konan/
+shared/build/
+androidApp/build/
+iosApp/.generated/
+iosApp/Pods/
+iosApp/.symlinks/
+
+# OS generated files
+.DS_Store
+Thumbs.db
