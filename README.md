@@ -35,9 +35,9 @@
 ```text
 crossplatform-mobile-labs/
 ├── 01-jetpack-compose-notes/      # Нативный Android: Notes App на Kotlin + Jetpack Compose
-├── 02-react-native-4/             # React Native: кроссплатформенное мобильное приложение
-├── 03-flutter-5/                  # Flutter: UI-приложение на Dart
-├── 04-kmm-6/                      # Kotlin Multiplatform Mobile: shared logic + native UI
+├── 02-react-native-geonotes/      # React Native: GeoNotes
+├── 03-flutter-tracker/            # Flutter: Activity Tracker
+├── 04-kmm-expenses/               # Kotlin Multiplatform Mobile: Expense Tracker
 ├── 05-pwa-news/                   # Progressive Web App: новостное приложение с offline/push
 └── README.md                      # Главное оглавление репозитория
 ```
@@ -49,9 +49,9 @@ crossplatform-mobile-labs/
 | № | Лабораторная работа | Технологии | Краткое описание | Ссылка |
 |---|---|---|---|---|
 | 1 | **Notes App — Персональный менеджер заметок** | Kotlin, Jetpack Compose, Room, Coroutines, MVVM | Нативное Android-приложение для создания, редактирования и удаления заметок с локальной БД SQLite через Room. | [Перейти к README](./01-jetpack-compose-notes/README.md) |
-| 2 | **React Native App** | React Native, JavaScript / TypeScript, Navigation | Кроссплатформенное мобильное приложение, реализованное на React Native с единым JavaScript-кодом для Android и iOS. | [Перейти к README](./02-react-native-4/README.md) |
-| 3 | **Flutter App** | Flutter, Dart, Material UI | Кроссплатформенное приложение на Flutter с декларативным UI и единым рендерингом для разных платформ. | [Перейти к README](./03-flutter-5/README.md) |
-| 4 | **KMM App** | Kotlin Multiplatform Mobile, Compose, SwiftUI / UIKit | Проект с общей бизнес-логикой на Kotlin и нативным пользовательским интерфейсом под Android и iOS. | [Перейти к README](./04-kmm-6/README.md) |
+| 2 | **GeoNotes — React Native App** | React Native, TypeScript, Expo, SQLite, Redux Toolkit | Кроссплатформенное мобильное приложение для создания геозаметок с координатами, адресом и фотографиями. | [Перейти к README](./02-react-native-geonotes/README.md) |
+| 3 | **Activity Tracker — Flutter App** | Flutter, Dart, Provider, SQLite, Sensors | Кроссплатформенное приложение для отслеживания активности пользователя, шагов, дистанции и статистики тренировок. | [Перейти к README](./03-flutter-tracker/README.md) |
+| 4 | **Expense Tracker — KMM App** | Kotlin Multiplatform Mobile, SQLDelight, Compose, SwiftUI | Проект с общей бизнес-логикой расходов и бюджетов на Kotlin и нативными интерфейсами для Android и iOS. | [Перейти к README](./04-kmm-expenses/README.md) |
 | 5 | **PWA News Aggregator** | HTML, CSS, JavaScript, Node.js, Service Worker, Push API | Прогрессивное веб-приложение для чтения новостей с поддержкой офлайн-режима, установки на устройство и push-уведомлений. | [Перейти к README](./05-pwa-news/README.md) |
 
 ---
@@ -62,9 +62,9 @@ crossplatform-mobile-labs/
 - [📒 Лабораторная работа №1 — Jetpack Compose Notes App](./01-jetpack-compose-notes/README.md)
 
 ### 2. Кроссплатформенные фреймворки
-- [⚛️ Лабораторная работа №2 — React Native](./02-react-native-4/README.md)
-- [🦋 Лабораторная работа №3 — Flutter](./03-flutter-5/README.md)
-- [🧬 Лабораторная работа №4 — Kotlin Multiplatform Mobile](./04-kmm-6/README.md)
+- [⚛️ Лабораторная работа №2 — React Native GeoNotes](./02-react-native-geonotes/README.md)
+- [🦋 Лабораторная работа №3 — Flutter Activity Tracker](./03-flutter-tracker/README.md)
+- [🧬 Лабораторная работа №4 — Kotlin Multiplatform Mobile](./04-kmm-expenses/README.md)
 
 ### 3. Прогрессивные веб-приложения
 - [🌐 Лабораторная работа №5 — PWA News Aggregator](./05-pwa-news/README.md)
@@ -78,10 +78,10 @@ crossplatform-mobile-labs/
 | Направление | Стек |
 |---|---|
 | Нативная Android-разработка | Kotlin, Jetpack Compose, Room, StateFlow, MVVM |
-| JavaScript-кроссплатформа | React Native, Navigation, Components API |
-| Dart-кроссплатформа | Flutter, Material Widgets, Stateful / Stateless Widgets |
-| Shared Mobile Logic | Kotlin Multiplatform Mobile (KMM) |
-| Web / Mobile Hybrid | PWA, Service Worker, Cache API, Push API, Manifest |
+| JavaScript-кроссплатформа | React Native, Expo, SQLite, Redux Toolkit |
+| Dart-кроссплатформа | Flutter, Provider, SQLite, Sensors API |
+| Shared Mobile Logic | Kotlin Multiplatform Mobile, SQLDelight, Compose, SwiftUI |
+| Web / Mobile Hybrid | PWA, Service Worker, Cache API, IndexedDB, Push API |
 
 </div>
 
@@ -116,12 +116,12 @@ crossplatform-mobile-labs/
 
 ## 🔗 Быстрые ссылки
 
-- [📁 Репозиторий целиком](https://github.com/akkariq/crossplatform-mobile-labs)
+- [📁 Репозиторий целиком](./README.md)
 - [📒 Jetpack Compose Notes](./01-jetpack-compose-notes/README.md)
-- [⚛️ React Native Lab](./02-react-native-4/README.md)
-- [🦋 Flutter Lab](./03-flutter-5/README.md)
-- [🧬 KMM Lab](./04-kmm-6/README.md)
-- [🌐 PWA Lab](./05-pwa-news/README.md)
+- [⚛️ React Native GeoNotes](./02-react-native-geonotes/README.md)
+- [🦋 Flutter Activity Tracker](./03-flutter-tracker/README.md)
+- [🧬 KMM Expense Tracker](./04-kmm-expenses/README.md)
+- [🌐 PWA News](./05-pwa-news/README.md)
 
 ---
 
